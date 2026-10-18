@@ -141,7 +141,7 @@ export const NavigationOverlay = ({ isOpen, onClose, onBookTour }) => {
                 onBookTour();
               }, 180);
             }}
-            className="w-full py-3.5 sm:py-4 rounded-full bg-gold text-black font-semibold text-xs tracking-widest uppercase hover:bg-white transition-all duration-300 shadow-lg shadow-gold/20 cursor-pointer"
+            className="w-full py-2.5 sm:py-3 rounded-full bg-gold text-black font-semibold text-xs tracking-widest uppercase hover:bg-white transition-all duration-300 shadow-md cursor-pointer"
           >
             Schedule Confidential Tour
           </button>

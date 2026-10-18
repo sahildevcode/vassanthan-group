@@ -161,26 +161,26 @@ export const SignatureProperties = ({ onSelectProperty }) => {
                   </div>
                 </div>
 
-                {/* Direct Action Buttons */}
-                <div className="flex items-center gap-3 pt-2">
+                {/* Direct Action Buttons (Sleek, refined luxury proportions) */}
+                <div className="flex items-center gap-2.5 pt-2">
                   <a
                     href={`https://wa.me/971564321798?text=${encodeURIComponent(
                       `Hello Vassanthan Atelier, I am requesting a private architectural dossier and viewing for "${prop.name}" (${prop.price} / ${prop.location}).`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 py-3.5 rounded-full bg-white text-black hover:bg-gold font-semibold text-xs tracking-widest uppercase transition-all duration-300 text-center flex items-center justify-center gap-2 shadow-lg"
+                    className="flex-1 py-2.5 px-4 rounded-full bg-white text-black hover:bg-gold font-medium text-[11px] tracking-widest uppercase transition-all duration-300 text-center flex items-center justify-center gap-1.5 shadow-md hover:scale-[1.02] active:scale-[0.98]"
                   >
                     <span>Request Dossier</span>
-                    <ArrowUpRight className="w-4 h-4" />
+                    <ArrowUpRight className="w-3.5 h-3.5" />
                   </a>
 
                   <a
                     href="tel:+971564321798"
-                    className="p-3.5 rounded-full border border-white/20 bg-white/5 hover:bg-white/15 text-white transition-colors"
+                    className="p-2.5 rounded-full border border-white/20 bg-white/5 hover:bg-gold hover:text-black text-white transition-all duration-300"
                     title="Speak with Atelier: +971-564-321-798"
                   >
-                    <Phone className="w-4 h-4 text-gold" />
+                    <Phone className="w-3.5 h-3.5 text-gold hover:text-black transition-colors" />
                   </a>
                 </div>
 

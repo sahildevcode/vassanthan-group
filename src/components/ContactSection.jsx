@@ -227,9 +227,9 @@ Confidential Notes: ${form.message || 'Please arrange a discreet private showing
 
                 <button
                   type="submit"
-                  className="w-full py-4 rounded-full bg-white text-black hover:bg-gold hover:text-black font-semibold text-xs tracking-widest uppercase shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 hover:scale-[1.01] active:scale-[0.99]"
+                  className="w-full py-3 rounded-full bg-white text-black hover:bg-gold font-medium text-xs tracking-widest uppercase shadow-xl transition-all duration-300 flex items-center justify-center gap-2 hover:scale-[1.01] active:scale-[0.99] cursor-pointer"
                 >
-                  <Send className="w-4 h-4" />
+                  <Send className="w-3.5 h-3.5" />
                   <span>Transmit Private Tour Request</span>
                 </button>
               </form>

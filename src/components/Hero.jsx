@@ -84,11 +84,11 @@ export const Hero = ({
               Bespoke monolithic residences crafted with travertine stone, continuous floor-to-ceiling glass, and reflective waters. Designed for the world's most discerning collectors.
             </p>
 
-            {/* Action Buttons (Completely visible on screen) */}
-            <div className="hero-action-pill flex flex-wrap items-center justify-center lg:justify-start gap-3.5 mt-6 sm:mt-8">
+            {/* Action Buttons (Refined luxury proportions) */}
+            <div className="hero-action-pill flex flex-wrap items-center justify-center lg:justify-start gap-3 mt-6 sm:mt-8">
               <button
                 onClick={onExplore}
-                className="px-7 py-3 rounded-full bg-white text-black hover:bg-gold hover:text-black font-semibold text-xs tracking-widest uppercase transition-all duration-300 shadow-xl shadow-black/60 hover:scale-105 active:scale-95 flex items-center gap-2 group"
+                className="px-5 py-2.5 rounded-full bg-white text-black hover:bg-gold hover:text-black font-medium text-[11px] sm:text-xs tracking-widest uppercase transition-all duration-300 shadow-lg shadow-black/50 hover:scale-105 active:scale-95 flex items-center gap-1.5 group cursor-pointer"
               >
                 <span>Explore Residences</span>
                 <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -96,7 +96,7 @@ export const Hero = ({
 
               <button
                 onClick={onBookTour}
-                className="px-6 py-3 rounded-full border border-white/30 bg-black/60 hover:bg-white/15 backdrop-blur-md text-white font-medium text-xs tracking-widest uppercase transition-all duration-300 hover:border-gold hover:text-gold flex items-center gap-2"
+                className="px-4 sm:px-5 py-2.5 rounded-full border border-white/25 bg-black/60 hover:bg-white/15 backdrop-blur-md text-white font-medium text-[11px] sm:text-xs tracking-widest uppercase transition-all duration-300 hover:border-gold hover:text-gold flex items-center gap-2 cursor-pointer"
               >
                 <PhoneCall className="w-3.5 h-3.5 text-gold" />
                 <span>Private Line: +971-564-321-798</span>

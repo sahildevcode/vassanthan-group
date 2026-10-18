@@ -19,6 +19,25 @@
     overflow: hidden;
   }
 
+  /* Rock-solid mobile viewport background (immune to address bar collapse jumps) */
+  .fixed-viewport-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100lvh;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
   body {
     @apply bg-[#05070D] text-gray-200 font-sans selection:bg-[#D4AF37] selection:text-black;
     font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';

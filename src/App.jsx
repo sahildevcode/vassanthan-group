@@ -111,13 +111,13 @@ export default function App() {
   return (
     <div className="relative min-h-screen text-gray-200 selection:bg-gold selection:text-black">
       
-      {/* 1. FIXED 4K ARCHITECTURAL BACKGROUND (Natural un-zoomed wide framing) */}
-      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden select-none">
+      {/* 1. FIXED 4K ARCHITECTURAL BACKGROUND (Rock-solid viewport on mobile & desktop) */}
+      <div className="fixed-viewport-bg select-none">
         <img
           key={currentVilla.src}
           src={currentVilla.src}
           alt={currentVilla.title}
-          className="w-full h-full object-cover object-[center_42%] filter brightness-90 contrast-[1.05] transition-all duration-700 ease-out"
+          className="w-full h-full object-cover object-[center_42%] filter brightness-90 contrast-[1.05] transition-opacity duration-700 ease-out"
         />
         {/* Soft vignette gradients for contrast and readability */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#05070D] via-black/20 to-[#05070D]/60 pointer-events-none" />
@@ -125,7 +125,7 @@ export default function App() {
       </div>
 
       {/* 2. FIXED THREE.JS 3D REFLECTIVE LAYER */}
-      <div className="fixed inset-0 z-[1] pointer-events-none">
+      <div className="fixed-viewport-bg pointer-events-none" style={{ zIndex: 1 }}>
         <ThreeHeroScene />
       </div>
 

@@ -102,11 +102,15 @@ export const ThreeHeroScene = () => {
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
 
-    // Handle Resize
+    // Handle Resize (Ignore mobile URL bar collapse height-only changes)
+    let lastWidth = window.innerWidth;
     const handleResize = () => {
       if (!container) return;
-      const width = container.clientWidth;
-      const height = container.clientHeight;
+      const width = window.innerWidth;
+      if (Math.abs(width - lastWidth) < 15) return;
+      lastWidth = width;
+
+      const height = window.innerHeight;
       camera.aspect = width / height;
       camera.updateProjectionMatrix();
       renderer.setSize(width, height);
@@ -121,13 +125,13 @@ export const ThreeHeroScene = () => {
       animationFrameId = requestAnimationFrame(animate);
       const elapsedTime = clock.getElapsedTime();
 
-      // Smooth camera interpolation (Parallax + Scroll)
+      // Smooth camera interpolation (Parallax mouse look only, no artificial scroll zoom)
       targetX += (mouseX - targetX) * 0.03;
       targetY += (mouseY - targetY) * 0.03;
 
-      camera.position.x = targetX * 0.4;
-      camera.position.y = 1.2 - targetY * 0.3 - scrollY * 0.001;
-      camera.position.z = 5 + scrollY * 0.0015;
+      camera.position.x = targetX * 0.35;
+      camera.position.y = 1.2 - targetY * 0.25;
+      camera.position.z = 5;
       camera.lookAt(0, 0.2, -1);
 
       // Animate water plane subtle waves

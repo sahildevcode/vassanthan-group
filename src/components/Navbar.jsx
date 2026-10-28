@@ -6,19 +6,21 @@ export const Navbar = ({ onOpenMenu, onOpenSearch, onBookTour }) => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#05070D]/90 backdrop-blur-2xl border-b border-white/10 shadow-2xl transition-all duration-300">
       <nav className="max-w-7xl mx-auto px-3 sm:px-8 h-16 sm:h-24 flex items-center justify-between">
         
-        {/* Minimalist Monogram Logo (Responsive sizing for mobile screens) */}
-        <a href="#" className="flex items-center gap-2 sm:gap-3.5 group shrink-0">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-white/30 bg-white/5 backdrop-blur-md flex items-center justify-center group-hover:border-gold transition-colors shrink-0">
-            <span className="font-serif italic font-bold text-base sm:text-lg text-white group-hover:text-gold transition-colors">
-              V
-            </span>
+        {/* Brand Logo & Name */}
+        <a href="#" className="flex items-center gap-2.5 sm:gap-3.5 group shrink-0">
+          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-white/30 bg-white overflow-hidden flex items-center justify-center shrink-0 group-hover:border-gold transition-colors shadow-md">
+            <img
+              src="./assets/soni-logo.png"
+              alt="Soni Financial Services"
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="flex flex-col">
-            <span className="font-serif text-sm sm:text-xl font-semibold tracking-[0.15em] sm:tracking-[0.2em] text-white uppercase leading-none">
-              Vassanthan
+            <span className="font-serif text-sm sm:text-lg lg:text-xl font-bold tracking-[0.12em] sm:tracking-[0.18em] text-white uppercase leading-none">
+              Soni
             </span>
-            <span className="text-[7.5px] sm:text-[9px] font-sans tracking-[0.25em] sm:tracking-[0.35em] text-gray-400 uppercase mt-0.5 sm:mt-1">
-              Atelier & Estates
+            <span className="text-[7.5px] sm:text-[9px] font-sans tracking-[0.2em] sm:tracking-[0.28em] text-gray-300 uppercase mt-0.5 sm:mt-1 font-medium">
+              Financial Services
             </span>
           </div>
         </a>

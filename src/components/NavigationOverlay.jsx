@@ -55,12 +55,16 @@ export const NavigationOverlay = ({ isOpen, onClose, onBookTour }) => {
         }`}
       >
         <div className="flex items-center gap-2.5 sm:gap-3">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-white/30 bg-white/5 flex items-center justify-center">
-            <span className="font-serif italic font-bold text-base sm:text-lg text-white">V</span>
+          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-white/30 bg-white overflow-hidden flex items-center justify-center shrink-0 shadow-md">
+            <img
+              src="./assets/soni-logo.png"
+              alt="Soni Financial Services"
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="flex flex-col">
-            <span className="font-serif text-sm sm:text-lg tracking-[0.15em] sm:tracking-[0.2em] uppercase">Vassanthan</span>
-            <span className="text-[7.5px] sm:text-[9px] font-sans tracking-[0.25em] text-gray-400 uppercase">Atelier & Estates</span>
+            <span className="font-serif text-sm sm:text-lg font-bold tracking-[0.12em] sm:tracking-[0.18em] uppercase">Soni</span>
+            <span className="text-[7.5px] sm:text-[9px] font-sans tracking-[0.2em] sm:tracking-[0.28em] text-gray-300 uppercase font-medium">Financial Services</span>
           </div>
         </div>
 
@@ -116,7 +120,7 @@ export const NavigationOverlay = ({ isOpen, onClose, onBookTour }) => {
           }`}
         >
           <span className="text-[10px] uppercase tracking-[0.25em] text-gold font-bold block">
-            Exclusive Atelier Desk
+            Exclusive Advisory Desk
           </span>
 
           <div>
@@ -128,7 +132,7 @@ export const NavigationOverlay = ({ isOpen, onClose, onBookTour }) => {
           </div>
 
           <div>
-            <div className="text-xs text-gray-400 font-light">Private Atelier Hubs:</div>
+            <div className="text-xs text-gray-400 font-light">Advisory Hubs:</div>
             <div className="text-xs sm:text-sm font-serif text-white mt-1">
               Palm Jumeirah & Emirates Hills, Dubai
             </div>
@@ -155,7 +159,7 @@ export const NavigationOverlay = ({ isOpen, onClose, onBookTour }) => {
           isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}
       >
-        <span>© 2026 Vassanthan Atelier & Estates</span>
+        <span>© 2026 Soni Financial Services</span>
         <div className="flex gap-4 sm:gap-6 mt-2 sm:mt-0">
           <a
             href="#properties"

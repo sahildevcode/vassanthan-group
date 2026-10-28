@@ -15,15 +15,19 @@ export const Footer = () => {
           
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full border border-white/30 bg-white/5 flex items-center justify-center">
-                <span className="font-serif italic font-bold text-lg text-white">V</span>
+              <div className="w-10 h-10 rounded-full border border-white/30 bg-white overflow-hidden flex items-center justify-center shrink-0 shadow-md">
+                <img
+                  src="./assets/soni-logo.png"
+                  alt="Soni Financial Services"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div>
-                <span className="font-serif text-xl font-semibold tracking-[0.2em] text-white uppercase block">
-                  Vassanthan
+              <div className="flex flex-col">
+                <span className="font-serif text-lg font-semibold tracking-[0.18em] text-white uppercase block leading-none">
+                  Soni
                 </span>
-                <span className="text-[9px] font-sans tracking-[0.35em] text-gray-400 uppercase">
-                  Atelier & Estates
+                <span className="text-[9px] font-sans tracking-[0.28em] text-gray-400 uppercase mt-1 font-medium">
+                  Financial Services
                 </span>
               </div>
             </div>
@@ -100,7 +104,7 @@ export const Footer = () => {
 
         {/* Bottom Tier */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-gray-400 font-light">
-          <p>© 2026 Vassanthan Atelier & Estates. Inspired by Architectural Purity. All rights reserved.</p>
+          <p>© 2026 Soni Financial Services. All rights reserved.</p>
 
           <div className="flex items-center gap-6">
             <a href="#contact" className="hover:text-gold transition-colors">Privacy & NDA</a>
